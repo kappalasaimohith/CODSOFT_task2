@@ -1,0 +1,63 @@
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+   }
+   
+   h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+   }
+   
+   input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-right: 10px;
+   }
+   
+   button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #594caf;
+    color: white;
+    cursor: pointer;
+   }
+   
+   ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+   }
+   
+   li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   li.finished {
+    text-decoration: line-through;
+    color: #ccc;
+   }
+   
+   li .actions {
+    display: flex;
+    align-items: center;
+   }
+   
+   li .actions button {
+    margin-left: 10px;
+   }
+   
+   #taskCounter {
+    font-size: 18px;
+    margin-bottom: 10px;
+   }

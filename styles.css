@@ -1,0 +1,247 @@
+    .container{
+        max-width: 90vw;
+        font-family: 'PT Sans', sans-serif;
+      }
+    h1{
+      color: white;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .justify-between{
+        justify-content: space-between;
+    }
+    .items-center{
+        align-items: center;
+    }
+    .navbar li{
+        list-style: none;
+        margin: 0 13px;
+        font-family: 'Roboto Condensed', sans-serif;   
+    }
+    .navbar{
+      display: flex;
+      height: 50px;
+    }
+
+    .book-cards-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .book-card {
+      width: 200px;
+      background-color: #5c675c;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: box-shadow 0.3s, height 0.3s;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+      height: auto;
+    }
+
+    .book-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .book-card .description {
+      opacity: 0;
+      transition: opacity 0.5s;
+      height: 0;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+
+    .book-card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: auto;
+    }
+
+    .book-card:hover img {
+      transform: translateY(-10px);
+    }
+
+    .book-card:hover .description {
+      opacity: 1;
+      height: auto;
+      padding: 10px 0;
+    }
+
+    .search{
+        text-align: center;
+    }
+
+    .search input[type=text]{
+        padding: 10px;
+        width: 350px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .search button[type=submit]{
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .search button[type=submit]:hover{
+        background-color: #45a049;
+    }
+
+    .center1{
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    
+.services {
+  padding: 40px;
+  
+}
+
+.services h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services li {
+  flex-basis: 300px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #4a3737;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services li i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.services li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services li p {
+  font-size: 16px;
+}
+
+
+.contact {
+  padding: 40px;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  flex-basis: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  display: block;
+  margin: 0 14%;
+  background-color: #315b87;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0a2a49;
+}
+
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    footer{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100px);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .slide-in {
+      animation: slideIn 1s;
+    }
